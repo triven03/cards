@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height:100vh;
+    min-width:100vw;
+    overflow-y: auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #373737;
+}
+header h2{
+    color:white;
+    font-size: 30px;
+}
+
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* min-width: 100vw; */
+}
+.cards{
+    width: 90%;
+    max-width:400px;
+    height: fit-content;
+    /* max-height: 360px; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    padding: 20px;
+
+}
+.cardimg{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    transition: 300ms ease-in;
+}
+.cardimg:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+hr{
+    border: 1px solid rgba(128, 128, 128, 0.27);
+    width: 75%;
+}
+.cardtitle{
+    margin: 15px 5px;
+    font-size: 22px;
+    font-weight: 550;
+}
+.money{
+    margin: 15px 5px 0 5px;
+}
+.price{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(102, 116, 204);
+    margin-right: 10px;
+}
+.discount{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(119, 124, 133);
+    margin-right: 8px;
+    text-decoration: line-through;
+}
+.offer{
+    background-color: #1DD1A1;
+    color: #fff;
+    padding: 4px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(89, 89, 89);
+    padding: 10px;
+    color: #fff;
+    /* border-radius: 10px; */
+}
